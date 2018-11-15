@@ -18,13 +18,6 @@
          placeholder="Password">
   </div>
 
-  <div class="form-group">
-    <label for="">What's your favorite value?</label>
-    <select class="form-control" id="favoriteValue">
-      <option *ngFor="let value of homeValues" [value]="value">{{ value.name }}</option>
-    </select>
-  </div>
-
   <div class="form-group text-center">
     <button class="btn btn-success mr-2" type="submit">Register</button>
     <button class="btn btn-default" type="button" (click)="cancel()">Cancel</button>
